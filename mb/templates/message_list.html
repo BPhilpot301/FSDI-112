@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Board</title>
+</head>
+<body>
+    <h1>Messages</h1>
+    <ul>
+        {% for message in messages %}
+        <li>
+            <strong>{{ messages.title }}</strong><br>
+            {{ message.content }}<br>
+            <small>{{ message.created_at }}</small>
+        </li>
+    </ul>
+    {% empty %}
+    <li>No Messages yet</li>
+    {% endblock %}
+</body>
+</html>
