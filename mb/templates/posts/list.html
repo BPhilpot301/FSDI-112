@@ -7,7 +7,7 @@
 {% block content %}
     <div>
         {% for item in post_list %}
-        <div>{{ item.title }} </div>
+        <div><a href= '{% url "post_detail" item.id %}'>{{ item.title }}</a></div>
         <div>{{ item.subtitle }} </div>
         <div>{{ item.body }} </div>
         <div>{{ item.author }} </div>

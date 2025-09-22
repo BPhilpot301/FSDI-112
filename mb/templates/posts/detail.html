@@ -11,4 +11,6 @@
     <strong>Created on: {{ single_post.created_on }}</strong>
     <p>{{ single_post.body }}</p>
     <br/>
+    <a href="{% url 'post_edit' single_post.id %}" class="btn btn-primary">Edit <i class="bi bi-pencil-square"></i></a>
+    <a href="{% url 'post_delete' single_post.id %}" class="btn btn-danger">Delete <i class="bi bi-trash3-fill"></i></a>
     {% endblock content %}
