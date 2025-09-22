@@ -17,3 +17,15 @@
 -if we want to check the full list, we can run python manage.py
 -to create an app we need to run "python manage.py startapp NAME_OF_THE_APP" (remember to change NAME_OF_THE_APP for the actual name)
 -after a creation of an app make sure to create the urls.py file inside of the app(IF AND ONLY IF YOU'RE GOING TO CREATE VIEWS ON IT)
+
+
+Mini Challenge 1 - Creating app and models
+STR:
+Create a new app called 'posts' (python manage.py startapp NAME_OF_THE_APP)
+Add the new app to the INSTALLED_APPS list inside of settings.py
+Create a 'urls.py' file inside of posts and add the includes to the 'urls.py' in config folder (Remember to add a new name for the new endpoints inside of config.urls e.g. "posts/")
+Create a new folder called posts inside of templates.
+Create a new file for list.html
+Create a new file for detail.html
+Create a new file for new.html
+Create a new file for delete.html

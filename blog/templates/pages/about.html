@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aboutt</title>
-</head>
-<body>
-    <h1>About Me</h1>
-    <p>Hello, my name is Britney. I am 36 years old. I love to draw, game on my pc, hike, fish, hunt, and camp.</p>
-</body>
-</html>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+About Me!
+{% endblock title %}
+
+{% block content %}
+<h1>About Me</h1>
+<p>This is an about me using jinja! </p>
+{% endblock content %}

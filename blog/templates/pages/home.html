@@ -1,2 +1,15 @@
 {% extends 'base.html' %}
 {% load static %}
+
+{% block title%}
+Home
+{% endblock title%}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock css %}
+
+{% block content %}
+<h1>Hello workd using django and jinja</h1>
+<p>this is my first html file using jinja tags</p>
+{% endblock content%}
