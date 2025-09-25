@@ -29,3 +29,24 @@ Create a new file for list.html
 Create a new file for detail.html
 Create a new file for new.html
 Create a new file for delete.html
+
+
+
+Add the functionality to display all of the existing posts in single page. only want to display the title and the author.
+
+STR
+create the PostListView class 
+Link the class inside of the urls.py
+use the list.html to display the posts
+add the option to the navbar
+
+
+MC
+Views for Drafts Posts and Archived
+
+create two more views to handle the drafts and archived posts. make sure that this new options in the navbar are only for the logged in user
+
+create a PostDraftListView and PostArchivedListView
+linked to the new views to urls
+link the views to new templates
+add the option Drafts and Archived to the navbar
