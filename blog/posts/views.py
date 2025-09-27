@@ -18,16 +18,18 @@ class PostListView(ListView):
         return(context)
 
 class PostDraftListView(ListView):
-    template_name = "post/draft_list.html"
+    template_name = "posts/draft_list.html"
     context_object_name = "draft"
     status = Status.objects.get(name="draft")
+    queryset = Post.objects.filter(status=status).order_by("created_on").reverse()
+    
    
 
 
 class PostArchivedListView(ListView):
-    template_name = "post/archived_list.html"
+    template_name = "posts/archived_list.html"
     context_object_name = "archived"
     status = Status.objects.get(name="archived")
-    queryset = Post.objects.filter(status=status).order_by("created_on")
+    queryset = Post.objects.filter(status=status).order_by("created_on").reverse()
 
 # Create your views here.

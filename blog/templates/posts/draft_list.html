@@ -8,9 +8,9 @@
 {% block content %}
     <div class="container">
         {% for item in drafts %}
-            <h1>{{item.title}}</h1>
-            <h1>{{item.author}}</h1>
-            <h1>{{item.status}}</h1>
+            <h1>Title: {{ item.title }}</h1>
+            <h6>Created by: {{ item.author }}</h6>
+            <p>Post Status: {{ item.status.description  }}</p>
             <br>
         {% endfor %}
     </div>
